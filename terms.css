@@ -1,0 +1,148 @@
+/* Reset and base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Prompt', sans-serif;
+    background: #f9fafc;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #222;
+    border-left: 4px solid #a777e3;
+    padding-left: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.5rem;
+    color: #444;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .en {
+    font-size: 0.92em;
+    color: #888;
+    margin-top: 0.25rem;
+    display: block;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  a {
+    color: #6e8efb;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #0a2342;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgb(10 35 66 / 0.3);
+    transition: background 0.4s ease;
+  }
+  
+  body.dark-mode .navbar {
+    background: #031829;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: default;
+    user-select: none;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 0.5rem;
+    filter: drop-shadow(0 0 2px #a4c1ff);
+    transition: filter 0.3s ease;
+  }
+  
+  body.dark-mode .logo img {
+    filter: drop-shadow(0 0 4px #a4c1ff);
+  }
+  
+  .nav-links a {
+    color: #a4c1ff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  
+  #toggle-theme {
+    background: transparent;
+    border: none;
+    color: #a4c1ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #toggle-theme:hover {
+    color: #fff;
+  }
+  

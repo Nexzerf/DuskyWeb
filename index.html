@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dusky</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body class="light-mode">
+  <nav class="navbar">
+    <div class="logo"><img src="assets/logo.png" alt="Dusky"></div>
+    <div class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="index.html">ฟีเจอร์</a>
+        <a href="index.html">คำสั่ง</a>
+        <a href="terms.html">นโยบายความเป็นส่วนตัว</a>
+    </div>
+  </nav>
+
+  <header class="hero animate-fade">
+    <div class="hero-bg"></div>
+    <h1 class="glow-text">Dusky</h1>
+    <p>ดัสกี้สุดเฟี้ยว</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=1375137565648097342&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn">➕ เชิญบอท</a>
+    <a href="https://discord.gg/M9C3dZsMrd" class="btn btn-alt">💬 เข้าดิสคอร์ด</a>
+    <img src="character.png" alt="Character" class="hero-character">
+  </header>
+
+  <section id="features">
+    <h2 class="section-title">✨ ฟีเจอร์เด่น</h2>
+    <div class="features-grid">
+      <div class="feature animate-slide">🎓 การเรียน / ข้อสอบ</div>
+      <div class="feature animate-slide">🔊 เพลง / เสียง</div>
+      <div class="feature animate-slide">📄 เอกสาร / ราชการ</div>
+      <div class="feature animate-slide">👤 ผู้ใช้ / โปรไฟล์</div>
+      <div class="feature animate-slide">😂 สนุก / สุ่ม</div>
+      <div class="feature animate-slide">🌠 สุ่มดวง</div>
+    </div>
+  </section>
+
+
+
+
+
+  <script>
+    const toggle = document.getElementById('toggle-theme');
+    toggle.onclick = () => {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+</body>
+</html>

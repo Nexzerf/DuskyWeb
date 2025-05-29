@@ -1,0 +1,170 @@
+/* ฟอนต์และพื้นฐาน */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #f8fbff, #eef3f9);
+    color: #2c3e50;
+    scroll-behavior: smooth;
+  }
+  
+ /* Navbar */
+ .navbar {
+    background: #0a2342;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgb(10 35 66 / 0.3);
+    transition: background 0.4s ease;
+  }
+  
+  body.dark-mode .navbar {
+    background: #031829;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: default;
+    user-select: none;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 0.5rem;
+    filter: drop-shadow(0 0 2px #a4c1ff);
+    transition: filter 0.3s ease;
+  }
+  
+  body.dark-mode .logo img {
+    filter: drop-shadow(0 0 4px #a4c1ff);
+  }
+  
+  .nav-links a {
+    color: #a4c1ff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  
+  #toggle-theme {
+    background: transparent;
+    border: none;
+    color: #a4c1ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #toggle-theme:hover {
+    color: #fff;
+  }
+  
+  
+  /* Header */
+  .commands-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+  }
+  .commands-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .commands-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Section */
+  .commands-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 40px;
+  }
+  
+  /* แต่ละหมวดคำสั่ง */
+  .command-category {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .command-category:nth-child(1) { animation-delay: 0.1s; }
+  .command-category:nth-child(2) { animation-delay: 0.2s; }
+  .command-category:nth-child(3) { animation-delay: 0.3s; }
+  
+  .command-category h2 {
+    font-size: 1.6rem;
+    color: #3b82f6;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 16px;
+  }
+  .command-category h2::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #6366f1;
+  }
+  
+  .command-category ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .command-category li {
+    font-size: 1.05rem;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    background: #f3f4f6;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .command-category li:hover {
+    background: #e0f2fe;
+    transform: scale(1.02);
+  }
+  
+  .command-category li strong {
+    color: #111827;
+    font-weight: 600;
+  }
+  
+  /* แอนิเมชัน */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .commands-header h1 {
+      font-size: 2rem;
+    }
+    .command-category {
+      padding: 20px;
+    }
+  }
+  

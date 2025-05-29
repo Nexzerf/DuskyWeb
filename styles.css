@@ -21,6 +21,35 @@
     background: #0a2342;
     color: #f9fbff;
   }
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-character {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    height: 95%;
+    max-height: 600px;
+    opacity: 0.95;
+    z-index: 1;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .hero:hover .hero-character {
+    transform: scale(1.03);
+  }
+  
+  @media (max-width: 768px) {
+    .hero-character {
+      right: 0;
+      height: 60%;
+      opacity: 0.2;
+    }
+  }
+  
   
   /* Navbar */
   .navbar {
